@@ -8,7 +8,6 @@
  */
 
 $(function() {
-    
     var map;
     var marker;
     var directionsDisplay;
@@ -99,7 +98,7 @@ $(function() {
                 infowindow.setContent($infowindow.html());
                 infowindow.open(map, marker);
 
-                $dd.find("img").eq(0).attr("src", "./photos/" + e.id + ".jpg");
+                $dd.find("img").eq(0).attr("src", "//8am.jp/opendata/donburi-tourism-fukui/" + e.id + ".jpg");
                 $dd.slideDown();
                 $dd.siblings("dd").slideUp();
             });

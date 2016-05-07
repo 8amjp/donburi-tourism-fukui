@@ -4,30 +4,37 @@
 <meta charset="UTF-8">
 <title>丼ツーリズムへ行こう (at 8am.)</title>
 <meta name="description" content="丼ツーリズム参加店舗を地図上に表示します。「福井県オープンデータライブラリ」で公開されているオープンデータを使用しています。">
-<meta name="author" content="8am.jp">
+<meta name="keywords" content="福井県オープンデータライブラリ,オープンデータ,HTML5,jQuery,CSS3,W3C">
+<meta name="author" content="http://8am.jp/">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta name="format-detection" content="telephone=no"> 
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta http-equiv="content-language" content="ja">
 <link rel="icon" type="image/png" href="./icon.png">
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./icon.png">
+<!-- Bootstrap CDN -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+<!-- Google Fonts -->
 <link rel='stylesheet' href="http://fonts.googleapis.com/css?family=Open+Sans:400,300" type="text/css">
 <link rel="stylesheet" href="./app.css">
 </head>
 <body>
 <div id="header">
-  <em id="title">丼ツーリズムへ行こう</em>
-  <a href="//8am.jp/play/donburi-tourism-fukui/" target="_parent" id="credit">このアプリについて</a>
+    丼ツーリズムへ行こう
+    <a href="http://8am.jp/%E4%B8%BC%E3%83%84%E3%83%BC%E3%83%AA%E3%82%BA%E3%83%A0%E3%81%B8%E8%A1%8C%E3%81%93%E3%81%86/" target="_parent" id="credit">このアプリについて</a>
 </div>
 <div id="dashboard">
-  <div id="map"></div>
-  <div id="list"></div>
+    <div id="map"></div>
+    <div id="list"></div>
 </div>
-<script src="http://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+<!-- jQuery CDN -->
+<script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+<!-- Bootstrap CDN -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAFiiYUnvGUazgrLZLJEMcTy_MSff9ZV78&sensor=true"></script>
+<!-- Google Maps JavaScript API -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAFiiYUnvGUazgrLZLJEMcTy_MSff9ZV78" type="text/javascript"></script>
 <script src="./app.js"></script>
 </body>
 </html>
